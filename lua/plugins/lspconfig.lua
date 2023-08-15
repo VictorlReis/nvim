@@ -3,6 +3,9 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
+        omnisharp = {},
+        pyright = {},
+        ruff_lsp = {},
         jsonls = {
           -- lazy-load schemastore when needed
           on_new_config = function(new_config)

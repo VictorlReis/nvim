@@ -1,5 +1,7 @@
 return {
-  { "williamboman/mason-lspconfig.nvim" },
+  { "williamboman/mason-lspconfig.nvim", opts = {
+    ensure_installed = "pyrighht",
+  } },
   {
     "williamboman/mason.nvim",
     opts = function(_, opts)
