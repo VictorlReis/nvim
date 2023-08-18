@@ -6,6 +6,7 @@ return {
         omnisharp = {},
         pyright = {},
         ruff_lsp = {},
+        tailwindcss = {},
         jsonls = {
           -- lazy-load schemastore when needed
           on_new_config = function(new_config)
