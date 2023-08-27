@@ -1,24 +1,30 @@
 return {
   {
-    "tpope/vim-fugitive",
+    "sindrets/diffview.nvim",
     lazy = true,
-    cmd = { "Git" },
-    keys = {
-      { "<leader>gs", ":Git<CR>" },
-      { "<leader>gf", ":Git fetch<CR>" },
-    },
+    cmd = { "DiffviewOpen", "DiffviewClose", "DiffviewFileHistory" },
+    enabled = true,
   },
-  {
-    "junegunn/gv.vim",
-    dependencies = {
-      "tpope/vim-fugitive",
-    },
-    cmd = "GV",
-  },
-  {
-    "lewis6991/gitsigns.nvim",
-    config = function()
-      require("gitsigns").setup()
-    end,
-  },
+  -- {
+  --   "tpope/vim-fugitive",
+  --   lazy = true,
+  --   cmd = { "Git" },
+  --   keys = {
+  --     { "<leader>gs", ":Git<CR>" },
+  --     { "<leader>gf", ":Git fetch<CR>" },
+  --   },
+  -- },
+  -- {
+  --   "junegunn/gv.vim",
+  --   dependencies = {
+  --     "tpope/vim-fugitive",
+  --   },
+  --   cmd = "GV",
+  -- },
+  -- {
+  --   "lewis6991/gitsigns.nvim",
+  --   config = function()
+  --     require("gitsigns").setup()
+  --   end,
+  -- },
 }
