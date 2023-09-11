@@ -7,7 +7,7 @@ return {
 
     return {
       options = {
-        theme = "auto",
+        theme = "base16",
         globalstatus = true,
         disabled_filetypes = { statusline = { "dashboard", "alpha" } },
       },
@@ -62,13 +62,16 @@ return {
           },
         },
         lualine_y = {
-          { "progress", separator = " ", padding = { left = 1, right = 0 } },
-          { "location", padding = { left = 0, right = 1 } },
+          { "fileencoding", padding = { left = 1, right = 0 } },
+          { "filetype", padding = { left = 1, right = 1 } },
         },
         lualine_z = {
-          function()
-            return " " .. os.date("%R")
-          end,
+          { "location", padding = { left = 0, right = 1 } },
+          { "progress", separator = " ", padding = { left = 1, right = 1 } },
+          -- function()
+          --   -- return " " .. os.date("%R")
+          --   return "victor"
+          -- end,
         },
       },
       extensions = { "neo-tree", "lazy" },

@@ -5,7 +5,14 @@ return {
       colorscheme = "dracula",
     },
   },
+  { "catppuccin/nvim", name = "catppuccin" },
+  {
+    "folke/tokyonight.nvim",
+    opts = {
+      transparent = true,
+    },
+  },
   { "LazyVim/LazyVim", opts = {
-    colorscheme = "catppuccin",
-  }, enable = false },
+    colorscheme = "catppuccin-mocha",
+  } },
 }

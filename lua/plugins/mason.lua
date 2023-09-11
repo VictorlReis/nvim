@@ -2,8 +2,8 @@ return {
   {
     "williamboman/mason-lspconfig.nvim",
     opts = {
-      ensure_installed = "pyrighht",
-    }
+      ensure_installed = { "mypy, ruff, pyright", "debugpy" },
+    },
   },
   {
     "williamboman/mason.nvim",
@@ -13,6 +13,7 @@ return {
       table.insert(opts.ensure_installed, "proselint")
       table.insert(opts.ensure_installed, "write-good")
       table.insert(opts.ensure_installed, "alex")
+      table.insert(opts.ensure_installed, "black")
     end,
   },
 }
