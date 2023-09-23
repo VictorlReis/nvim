@@ -5,6 +5,9 @@ return {
     cmd = { "DiffviewOpen", "DiffviewClose", "DiffviewFileHistory" },
     enabled = true,
   },
+  {
+    "f-person/git-blame.nvim",
+  },
   -- {
   --   "tpope/vim-fugitive",
   --   lazy = true,
